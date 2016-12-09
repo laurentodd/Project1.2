@@ -1,0 +1,281 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li class="active"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+        <li><a href='@Url.Action("Degrees", "Home")'>Degrees</a></li>
+    </ol>
+</div>  
+
+<h2><strong>@ViewBag.Title</strong> </h2>
+
+<p> 
+    <div class="row">
+        <div class="col-md-4">
+            <h3><strong>About</strong>  </h3> <br />
+           <strong>Degree:</strong>  @ViewBag.DegreeName 
+            <strong>Degree Coordinator:</strong> @ViewBag.Coordinator <br />
+            <strong>Professor Title: </strong> @ViewBag.ProfTitle <br />
+            <strong>Professor Office Address: </strong> @ViewBag.Address <br />
+            <br />
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3><strong>Education</strong>  </h3> <br />
+                <strong>PhD:</strong> @ViewBag.PhD <br />
+                <strong>Masters Degree:</strong> @ViewBag.Masters <br />
+                <strong>Bachelors Degree:</strong> @ViewBag.Bachelors <br />
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><strong>Coordinator</strong>  </h3> 
+                    <br/>
+                    <img src="@Html.Raw(ViewBag.Picture)" />
+                </div>
+            </div>
+            </div>
+        </div>
+
+</p>
+
+<br/>
+<br/>
+
+<p>
+    <h1><strong>Questions</strong>  </h1>
+
+
+
+    <h3> How do I apply? </h3>
+
+   <p>To apply, please complete the online application found <a href= "https://marriottschool.byu.edu/apply/bsis/">here</a>. </p> 
+
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup1">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+   <h3>What GPA do I need apply?</h3> 
+
+    <p> A minimum 3.0 overall GPA is required to apply, though it does not guarantee acceptance. </p>
+    <p>A minimum 3.0 prerequisite GPA is also required, but again, does not guarantee acceptance. </p>
+  
+     <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup2">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup2" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    <h3> Other than grades, what goes into the application? </h3>
+
+    <p> In addition to grades, the application requires a current resume, as well as a 500-word essay. </p>
+
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup3">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup3" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+   <h3> May I apply concurrently to the information systems program or accounting program and the management program?</h3>
+    <p> Yes, you may apply concurrently to all undergraduate programs at the Marriott School. However, you may only enter into one of these programs. </p>
+
+    <p>The IS program admits students only for the fall semester, and the management program will be doing the same beginning fall of 2016. 
+    </p> 
+    <p>Please be aware of deadlines and which requirements are needed to apply to each program. Click <a href="https://marriottschool.byu.edu"> here </a> for more information.</p>
+   
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup4">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup4" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    <h3>What are the prerequisites for the Information Systems junior core?</h3>
+
+    <p> The prerequisite classes for the information systems junior core are as follows:</p>
+
+        <p> IS 201 (IS 110 must be taken before or concurrently with IS 201) </p>
+        <p>ACC 200</p>
+        <p>FIN 201</p>
+        <p>BUS M 241</p>
+        <p>IS 303 (or CS 142)</p>
+        <p>IS 201 and IS 303 (CS 142) require a grade of B or better.</p>
+ 
+ 
+
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup5">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup5" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+   <h3> What generals will be covered with prerequisite classes?</h3>
+
+    <p>Although only accounting 200 is a prerequisite for the Information Systems program, the following premanagement courses will count toward general education credit:  </p>
+
+   <p> ACC 200 GE: Quantitative Reasoning </p>
+   <p>STAT 121 GE: Languages of Learning/Quantitative Reasoning</p>
+   <p> MCOM 320 GE: Advanced Writing </p>
+   <p>ECON 110 GE: Social Science/ Partial AHTG</p>
+   <p>You will be required to take ECON 110, MCOM 320 and STAT 121 once admitted to the program. Completion of these courses before beginning the Management Core or MISM is highly recommended. If possible, it is helpful to have these courses complete before entering the junior core. </p>
+   
+
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup6">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup6" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    <h3> Can I take all of the prerequisite classes in the same semester? </h3>
+
+    <p>It is possible to take all of the prerequisite classes in one semester, though it is strongly discouraged due to the extensive time and effort required for each course.</p>
+
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup7">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup7" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+   <h3> What factors should I consider in deciding to retake a prerequisite class? </h3>
+
+    <p>Please consider the following:</p>
+
+        <p>Any repeated prerequisite courses will be discounted by .3 (e.g. A to A-) in the application process.<p>
+        <p>If a prerequisite course is retaken, the most recent grade is the one considered during the application process. Thus, it is important that you improve your grade the second time you take the class.
+        Premanagement courses may be repeated only once.</p>
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".demo-popup8">Reply</button>
+            <!-- popup box modal starts here -->
+            <div class="modal fade demo-popup8" tabindex="-2" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title">Leave a reply:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="reply" id="reply" placeholder="Your Reply">
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal-->
+            <!-- popup box modal ends -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+ 
+
+<h3> If you have any further questions, please submit them below:</h3>
+<form>
+
+    <div class="form-group">
+        <!-- Message field -->
+        <label class="control-label " for="message">Questions</label>
+        <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+    </div>
+
+</form>	
+
+	
+

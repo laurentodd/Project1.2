@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Information Systems FAQ";
+}
+@section css {
+    <link href="@Url.Content("~/css/StyleSheet1.css")" rel="stylesheet" />
+}
+<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="jumbotron">
+    <h1>Information Systems Management</h1>
+    <p class="lead">Welcome, prospective Information Systems students! </p>
+    <p><a href="https://www.prospects.ac.uk/careers-advice/what-can-i-do-with-my-degree/information-systems" class="btn btn-primary btn-lg">Careers in IS &raquo;</a></p>
+    <p> <a class="btn btn-lg btn-primary" href="https://catalog.byu.edu/management/information-systems/information-systems-bs-0">Program Outline &raquo; </a> </p>
+
+   </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <a class="twitter-timeline"
+           href="https://twitter.com/BYU_IS"
+           data-width="300"
+           data-height="300">
+            Tweets by BYU IS
+        </a>
+        <a class="twitter-follow-button"
+           href="https://twitter.com/BYU_IS">
+            <p> Follow BYU_IS </p>
+        </a>
+        <a class="fb-follow" data-href="https://www.facebook.com/BYUISAlumni/?hc_ref=SEARCH&amp;fref=nf"
+             data-width="300"
+             data-height="300"
+             data-layout="standard"
+             data-size="small"
+             data-show-faces="true">
+    </a>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="blockquote blockquote-reverse">
+                <p class="mb-0"> Any sufficiently advanced technology is equivalent to magic.</p>
+                <footer class="blockquote-footer">Arthur C. Clarke<cite title="Source Title"> </cite></footer>
+            </blockquote>
+
+            <blockquote class="blockquote blockquote-reverse">
+                <p class="mb-0">
+                    Information technology and business are becoming inextricably interwoven. I don't think anybody can talk meaningfully about one without the talking about the other.
+                </p>
+                <footer class="blockquote-footer">Bill Gates<cite title="Source Title"> </cite></footer>
+            </blockquote>
+        </div>
+
+        <div class="col-md-4">
+            <embed src=" http://colleges.usnews.rankingsandreviews.com/best-colleges/byu-3670"
+                   width="300"
+                   height="300">
+
+        </div>
+        
+        
+    <div class="col-md-4">
+        <a class="twitter-grid" href="https://twitter.com/byu_is"></a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Degrees</h2>
+        <p>Learn about degrees offered.</p>
+        <p><a class="btn btn-default" href='@Url.Action("Degrees", "Home")'>See more &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>About</h2>
+        <p>Learn about us.</p>
+        <p><a class="btn btn-default" href='@Url.Action("About", "Home")'>See more &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Contact</h2>
+        <p>Contact us.</p>
+        <p><a class="btn btn-default" href='@Url.Action("Contact", "Home")'>See more &raquo;</a></p>
+    </div>
+</div>

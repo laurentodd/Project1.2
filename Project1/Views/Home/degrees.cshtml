@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Degrees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><strong>Degrees</strong></h2>
+<h3> Please select a degree from the dropdown below:</h3>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Degrees
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("BSIS", "SelectedDegree", "Home", new{ degree = "BSIS"}, null) </li>
+        <li>@Html.ActionLink("MISM", "SelectedDegree", "Home", new{ degree = "MISM"}, null) </li>
+    </ul>
+</div>
+
+
